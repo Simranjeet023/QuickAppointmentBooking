@@ -20,7 +20,7 @@ namespace GetAccredited.Models
         private static UserManager<ApplicationUser> userManager;
 
         private const string ADMIN_NAME = "administrator";
-        private const string DEFAULT_PASSWORD = "Secret123$";
+        private const string DEFAULT_PASSWORD = "Pass12345";
 
         public static async Task EnsureRolesCreatedAsync(IApplicationBuilder app)
         {
@@ -118,19 +118,19 @@ namespace GetAccredited.Models
         {
             rep1 = new ApplicationUser
             {
-                UserName = "jsmith",
-                FirstName = "John",
-                LastName = "Smith",
-                Email = "jsmith@abc.org",
+                UserName = "raman",
+                FirstName = "Raman",
+                LastName = "Singh",
+                Email = "raman@b2b.org",
                 OrganizationId = org1.OrganizationId
             };
 
             rep2 = new ApplicationUser
             {
-                UserName = "jdoe",
-                FirstName = "Jane",
-                LastName = "Doe",
-                Email = "jdoe@def.org",
+                UserName = "raj",
+                FirstName = "Raj",
+                LastName = "Preet",
+                Email = "raj@ga.org",
                 OrganizationId = org2.OrganizationId
             };
 
